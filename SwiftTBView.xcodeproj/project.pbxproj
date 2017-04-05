@@ -15,6 +15,12 @@
 		8E1A746C1E810B7400B103C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A746A1E810B7400B103C6 /* LaunchScreen.storyboard */; };
 		8E1A74771E810B7400B103C6 /* SwiftTBViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1A74761E810B7400B103C6 /* SwiftTBViewTests.swift */; };
 		8E1A74821E810B7400B103C6 /* SwiftTBViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1A74811E810B7400B103C6 /* SwiftTBViewUITests.swift */; };
+		8E1A74991E810E3200B103C6 /* ShowHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1A74981E810E3200B103C6 /* ShowHomeViewController.swift */; };
+		8E1A74A11E810E9A00B103C6 /* FindListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1A74A01E810E9A00B103C6 /* FindListViewController.swift */; };
+		8E1A74A31E810EC100B103C6 /* MenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1A74A21E810EC100B103C6 /* MenuListViewController.swift */; };
+		8E1A74A51E810ED800B103C6 /* MyAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1A74A41E810ED800B103C6 /* MyAboutViewController.swift */; };
+		8E1A74A71E81120300B103C6 /* ShowHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1A74A61E81120300B103C6 /* ShowHomeTableViewCell.swift */; };
+		8E1A74A91E81205A00B103C6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1A74A81E81205A00B103C6 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		8E1A747D1E810B7400B103C6 /* SwiftTBViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTBViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1A74811E810B7400B103C6 /* SwiftTBViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTBViewUITests.swift; sourceTree = "<group>"; };
 		8E1A74831E810B7400B103C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E1A74981E810E3200B103C6 /* ShowHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShowHomeViewController.swift; path = UI/HomePage/Controllers/ShowHomeViewController.swift; sourceTree = "<group>"; };
+		8E1A74A01E810E9A00B103C6 /* FindListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindListViewController.swift; path = UI/Find/Controllers/FindListViewController.swift; sourceTree = "<group>"; };
+		8E1A74A21E810EC100B103C6 /* MenuListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuListViewController.swift; path = UI/Menu/Controllers/MenuListViewController.swift; sourceTree = "<group>"; };
+		8E1A74A41E810ED800B103C6 /* MyAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyAboutViewController.swift; path = UI/My/Controllers/MyAboutViewController.swift; sourceTree = "<group>"; };
+		8E1A74A61E81120300B103C6 /* ShowHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShowHomeTableViewCell.swift; path = UI/HomePage/Views/ShowHomeTableViewCell.swift; sourceTree = "<group>"; };
+		8E1A74A81E81205A00B103C6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = UI/HomePage/Controllers/DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,7 @@
 		8E1A745D1E810B7400B103C6 /* SwiftTBView */ = {
 			isa = PBXGroup;
 			children = (
+				8E1A748F1E810CA600B103C6 /* UI */,
 				8E1A745E1E810B7400B103C6 /* AppDelegate.swift */,
 				8E1A74601E810B7400B103C6 /* ViewController.swift */,
 				8E1A74621E810B7400B103C6 /* Main.storyboard */,
@@ -126,6 +139,131 @@
 				8E1A74831E810B7400B103C6 /* Info.plist */,
 			);
 			path = SwiftTBViewUITests;
+			sourceTree = "<group>";
+		};
+		8E1A748F1E810CA600B103C6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8E1A74931E810CE900B103C6 /* My */,
+				8E1A74921E810CE200B103C6 /* Menu */,
+				8E1A74911E810CDB00B103C6 /* Find */,
+				8E1A74901E810CD300B103C6 /* HomePage */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		8E1A74901E810CD300B103C6 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				8E1A74971E810D7800B103C6 /* Views */,
+				8E1A74961E810D7100B103C6 /* ViewModels */,
+				8E1A74951E810D6A00B103C6 /* Models */,
+				8E1A74941E810D6200B103C6 /* Controllers */,
+			);
+			name = HomePage;
+			sourceTree = "<group>";
+		};
+		8E1A74911E810CDB00B103C6 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				8E1A749F1E810E7700B103C6 /* Controllers */,
+			);
+			name = Find;
+			sourceTree = "<group>";
+		};
+		8E1A74921E810CE200B103C6 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				8E1A749E1E810E7200B103C6 /* Controllers */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		8E1A74931E810CE900B103C6 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				8E1A749D1E810E6B00B103C6 /* Views */,
+				8E1A749C1E810E6400B103C6 /* ViewModels */,
+				8E1A749B1E810E5D00B103C6 /* Models */,
+				8E1A749A1E810E5500B103C6 /* Controllers */,
+			);
+			name = My;
+			sourceTree = "<group>";
+		};
+		8E1A74941E810D6200B103C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E1A74981E810E3200B103C6 /* ShowHomeViewController.swift */,
+				8E1A74A81E81205A00B103C6 /* DetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8E1A74951E810D6A00B103C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8E1A74961E810D7100B103C6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		8E1A74971E810D7800B103C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E1A74A61E81120300B103C6 /* ShowHomeTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8E1A749A1E810E5500B103C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E1A74A41E810ED800B103C6 /* MyAboutViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8E1A749B1E810E5D00B103C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8E1A749C1E810E6400B103C6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		8E1A749D1E810E6B00B103C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8E1A749E1E810E7200B103C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E1A74A21E810EC100B103C6 /* MenuListViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8E1A749F1E810E7700B103C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E1A74A01E810E9A00B103C6 /* FindListViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +403,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1A74A91E81205A00B103C6 /* DetailViewController.swift in Sources */,
+				8E1A74991E810E3200B103C6 /* ShowHomeViewController.swift in Sources */,
 				8E1A74611E810B7400B103C6 /* ViewController.swift in Sources */,
 				8E1A745F1E810B7400B103C6 /* AppDelegate.swift in Sources */,
+				8E1A74A71E81120300B103C6 /* ShowHomeTableViewCell.swift in Sources */,
+				8E1A74A31E810EC100B103C6 /* MenuListViewController.swift in Sources */,
+				8E1A74A51E810ED800B103C6 /* MyAboutViewController.swift in Sources */,
+				8E1A74A11E810E9A00B103C6 /* FindListViewController.swift in Sources */,
 				8E1A74671E810B7400B103C6 /* SwiftTBView.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
